@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+         
+        <reference name="after_body_start">
+            <block type="referralmarketing/onepage_success" name="after_body_start_script" template="redeal/gtm.phtml" />
+        </reference>
+    </default>
+    <checkout_onepage_success translate="label">
+        <label>One Page Checkout Success</label>
+               <reference name="head" before="-">
+            <block type="referralmarketing/onepage_success" name="header_module" as="header_module" template="redeal/head.phtml"/>
+        </reference>
+
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+
+        <reference name="content">
+            <reference name="checkout.success">
+
+                <action method="setTemplate" ifconfig="redeal/redeal_group/redeal_select"><template>redeal/success.phtml</template></action>
+            </reference>
+        </reference>
+    </checkout_onepage_success>
+</layout>

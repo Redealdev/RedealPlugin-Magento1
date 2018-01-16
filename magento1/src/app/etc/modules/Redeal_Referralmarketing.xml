@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Redeal_Referralmarketing>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Redeal_Referralmarketing>
+    </modules>
+</config>
