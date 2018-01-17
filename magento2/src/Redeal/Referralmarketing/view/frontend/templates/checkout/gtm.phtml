@@ -1,0 +1,33 @@
+
+		
+<?php $checkmodule =  $block->_getContainerSnippet();
+$write = $block->loadAllData();
+?>
+
+
+<?php if($checkmodule == 1){ 
+	$objectManager =\Magento\Framework\App\ObjectManager::getInstance();
+	$helper = $objectManager->get('Redeal\Referralmarketing\Helper\Data');
+	$containerId = $helper->getConfigValue('redeal_general/general/containerid');
+
+	$storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+	$baseurl = $storeManager->getStore()->getBaseUrl();
+
+
+	$requestInterface = $objectManager->get('Magento\Framework\App\RequestInterface');
+
+	$routeName      = $requestInterface->getRouteName()."<br>";
+	$moduleName     = $requestInterface->getModuleName()."<br>"; 
+	$controllerName = $requestInterface->getControllerName()."<br>"; 
+	$actionName     = $requestInterface->getActionName()."<br>";
+	if($routeName == "checkout" && $controllerName == "onepage" && $actionName == "success" ) {
+		?>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['RedealObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window, document, 'script', window.location.protocol + '<?php echo $redlurl;?>', 'redeal');
+	</script>
+
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<?php echo $containerId; ?>" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<?php }
+} ?>
