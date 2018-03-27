@@ -4,7 +4,6 @@
         <redeal_general>
             <general>
             	<active>1</active>
-                <custommode>Select Mode</custommode>
                </general>            
         </redeal_general>
     </default>

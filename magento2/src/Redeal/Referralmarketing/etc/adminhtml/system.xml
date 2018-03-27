@@ -20,14 +20,13 @@
                         <field id="active">1</field>
                     </depends>
                 </field>
-                <field id="custommode" translate="label comment" sortOrder="20" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Select Mode</label>
+                <!-- <field id="custommode" translate="labels comment" sortOrder="20" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Select Mode</label>
                     <source_model>Redeal\Referralmarketing\Model\Live</source_model>
                     <depends>
                         <field id="active">1</field>
                     </depends>
-
-                </field>
+                </field> -->
             </group>
         </section>
     </system>

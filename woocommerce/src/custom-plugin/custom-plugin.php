@@ -56,7 +56,7 @@ License: GPL2
 				   value="<?php echo esc_attr( $options[$args['label_for']] ); ?>">
             <?php
         }
-		function redeal_field_environment($args){
+		/*function redeal_field_environment($args){
 			
 			
 			$options = get_option( 'redeal_options' );
@@ -77,7 +77,7 @@ License: GPL2
                 <?php esc_html_e( 'Set Environment for Redeal Referralmarketing extension', 'redeal' ); ?>
 			</p>
 			<?php
-		}
+		}*/
         /**
          * top level menu
          */
@@ -141,21 +141,13 @@ function add_script_header(){
 	error_reporting(0);
 	$options = get_option( 'redeal_options' );
 	
-	if($options['redeal_field_environment'] == 1){	
 	?>
     <script>	
 	(function(i,s,o,g,r,a,m){i['RedealObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window, document, 'script', window.location.protocol + '//widget.redeal.se/js/redeal.js', 'redeal');
-    </script>
-	<?php } else { ?>
-	<script>	
-	
-	(function(i,s,o,g,r,a,m){i['RedealObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window, document, 'script', window.location.protocol + '//test-widget.redeal.se/js/redeal.js', 'redeal');
-    </script>
-	<?php }
+    </script>	
+	<?php 
      if(is_wc_endpoint_url( 'order-received' )) {
         
 

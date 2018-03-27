@@ -141,17 +141,18 @@ class Success extends \Magento\Checkout\Block\Onepage\Success {
         $objectManager =\Magento\Framework\App\ObjectManager::getInstance();
         $helper = $objectManager->get('Redeal\Referralmarketing\Helper\Data');
         //$write = $helper->getConfigValue('redeal_general/general/custommode');
-        $write = $helper->getConfigValue('redeal_general/general/custommode');
+       // $write = $helper->getConfigValue('redeal_general/general/custommode');
         // echo $write;
         // exit();
-        if($write == 2)
+        $redlurl = "//widget.redeal.se/js/redeal.js";
+        /*if($write == 2)
         {
             $redlurl = "//widget.redeal.se/js/redeal.js";
         }
         else
         {
             $redlurl = "//test-widget.redeal.se/js/redeal.js";
-        }
+        }*/
 
     }
 

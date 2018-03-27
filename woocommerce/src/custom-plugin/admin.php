@@ -30,7 +30,7 @@ function redeal_settings_init() {
         ]
     );
 	  
-    add_settings_field(
+    /*add_settings_field(
         'redeal_field_environment', // as of WP 4.6 this value is used only internally        
         __( 'Environment:', 'redeal' ),
         'redeal_field_environment',
@@ -41,7 +41,7 @@ function redeal_settings_init() {
             'class' => 'redeal_row',
             'redeal_custom_data' => 'environment',
         ]
-    );
+    );*/
 	
     add_settings_field(
         'redeal_field_container',
