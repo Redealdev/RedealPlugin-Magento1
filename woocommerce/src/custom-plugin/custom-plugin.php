@@ -42,7 +42,7 @@ License: GPL2
 			</select>
 			<p class="description">
 			
-                <?php esc_html_e( 'Enable or disable Redeal Referralmarketing extension', 'redeal' ); ?>
+                <?php esc_html_e( 'Enable or disable Redeal extension', 'redeal' ); ?>
 			</p>
 
             <?php
@@ -84,10 +84,10 @@ License: GPL2
         function redeal_options_page() {
             // add top level menu page
             add_menu_page(
-                'Redeal Referralmarketing Options',
+                'Redeal Options',
                 'Redeal Configurations',
                 'manage_options',
-                'redeal-referral-marketing',
+                'redeal-marketing',
                 'redeal_options_page_html'
             );
 

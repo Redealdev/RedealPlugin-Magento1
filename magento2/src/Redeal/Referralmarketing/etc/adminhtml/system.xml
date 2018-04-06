@@ -1,12 +1,12 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../Config/etc/system_file.xsd">
     <system>
         <tab id="referralmarketing" translate="label" sortOrder="300">
-            <label>Redeal Referralmarketing</label>
+            <label>Redeal</label>
             <!-- <class>referralmarketing</class> -->
         </tab>
         <section id="redeal_general" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>General config</label>
-            <tab>referralmarketing</tab>
+            <tab>Redeal</tab>
             <resource>Redeal_Referralmarketing::config</resource>
              <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">

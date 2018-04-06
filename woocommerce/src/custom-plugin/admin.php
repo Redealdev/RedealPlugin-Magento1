@@ -12,7 +12,7 @@ function redeal_settings_init() {
     // register a new section in the "redeal" page
     add_settings_section(
         'redeal_section_developers',
-        __( 'Redeal Referralmarketing Configuration', 'redeal' ),
+        __( 'Redeal Configuration', 'redeal' ),
         'redeal_section_after_title',
         'redeal'
     );
