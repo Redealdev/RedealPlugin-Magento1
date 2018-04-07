@@ -8,11 +8,10 @@
 function redeal_settings_init() {
     // register a new setting for "redeal" page
     register_setting( 'redeal', 'redeal_options' );
-
     // register a new section in the "redeal" page
     add_settings_section(
         'redeal_section_developers',
-        __( 'Redeal Referralmarketing Configuration', 'redeal' ),
+        __( 'Redeal Configuration', 'redeal' ),
         'redeal_section_after_title',
         'redeal'
     );
@@ -30,7 +29,7 @@ function redeal_settings_init() {
         ]
     );
 	  
-    add_settings_field(
+    /*add_settings_field(
         'redeal_field_environment', // as of WP 4.6 this value is used only internally        
         __( 'Environment:', 'redeal' ),
         'redeal_field_environment',
@@ -41,7 +40,7 @@ function redeal_settings_init() {
             'class' => 'redeal_row',
             'redeal_custom_data' => 'environment',
         ]
-    );
+    );*/
 	
     add_settings_field(
         'redeal_field_container',
@@ -55,9 +54,7 @@ function redeal_settings_init() {
             'redeal_custom_data' => 'container_public_id',
         ]
     );
-
 }
-
 /**
  * register our wporg_settings_init to the admin_init action hook
  */
