@@ -13,8 +13,8 @@ class Redeal_Referralmarketing_Model_Options
   public function toOptionArray()
   {
     $write = array(
-      array('value'=>2, 'label'=>'Live'),
-      array('value'=>1, 'label'=>'Test')
+      array('value'=>1, 'label'=>'Live'),
+      array('value'=>2, 'label'=>'Test')
       );
     return $write;
   }

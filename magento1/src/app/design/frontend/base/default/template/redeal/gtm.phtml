@@ -5,7 +5,7 @@
 $refer = $_GET['refererd'];
  ?>
  <?php 
-$write = Mage::getStoreConfig('redeal/redeal_group/section_two');
+//$write = Mage::getStoreConfig('redeal/redeal_group/section_two');
 $isactive = Mage::getStoreConfig('redeal/redeal_group/redeal_select');
 //echo $isactive ;
 
@@ -26,12 +26,13 @@ if(Mage::app()->getFrontController()->getAction()->getFullActionName() == 'check
 		 // echo "<pre>";
 		 // print_r($write);
 		 // exit();
-		 if($write == 2){
+ 	$rdlurl = "//widget.redeal.se/js/redeal.js";
+		 /*if($write == 1){
 		 	$rdlurl = "//widget.redeal.se/js/redeal.js";
 		 }else{
 		 	$rdlurl = "//test-widget.redeal.se/js/redeal.js";
 		 }
-		 
+		 */
 
 
 ?>

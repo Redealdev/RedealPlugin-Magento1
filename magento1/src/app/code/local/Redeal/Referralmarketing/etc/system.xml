@@ -2,13 +2,13 @@
 <config>
     <tabs>
         <redeal translate="label" module="referralmarketing">
-            <label>Redeal Referralmarketing</label>
+            <label>Redeal</label>
             <sort_order>100</sort_order>
         </redeal>
     </tabs>
     <sections>
         <redeal translate="label" module="referralmarketing">
-            <label>Redeal Referralmarketing Options</label>
+            <label>Redeal Options</label>
             <tab>redeal</tab>
             <sort_order>1000</sort_order>
             <show_in_default>1</show_in_default>
@@ -27,7 +27,7 @@
                     <fields>
                         <redeal_select translate="label">
                             <label>Enable: </label>
-                        <comment>Enable or disable Redeal Referralmarketing extension </comment>
+                        <comment>Enable or disable Redeal extension </comment>
                             <frontend_type>select</frontend_type>
                             <sort_order>90</sort_order>
                             <show_in_default>1</show_in_default>
@@ -44,7 +44,7 @@
                             <show_in_store>1</show_in_store>
                             <depends><redeal_select>1</redeal_select></depends>
                         </containerid>
-                        <section_two translate="label">
+                        <!-- <section_two translate="label">
                             <label>Select Mode</label>
                             <frontend_type>select</frontend_type>
                             <source_model>referralmarketing/options</source_model>
@@ -53,11 +53,11 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                              <depends><redeal_select>1</redeal_select></depends>
-                        </section_two>
+                        </section_two> -->
                     </fields>
                 </redeal_group>
             </groups>
-             <comment><![CDATA[<div style='background-color: rgba(76, 174, 118, .8);margin-bottom: 10px;height: 40px;'> <span style='float:left;font-size: 20px; color:white;margin:10px;'>Redeal Referral Marketing</span> </div>If you have any questions or would like any help please visit <a href='https://www.redeal.se/en/get-started' target='_blank'>Redeal Referral Marketing - Get Started</a>.]]></comment>
+             <comment><![CDATA[<div style='background-color: rgba(76, 174, 118, .8);margin-bottom: 10px;height: 40px;'> <span style='float:left;font-size: 20px; color:white;margin:10px;'>Redeal</span> </div>If you have any questions or would like any help please visit <a href='https://www.redeal.se/en/get-started' target='_blank'>Redeal - Get Started</a>.]]></comment>
         </redeal>
     </sections>
 </config>

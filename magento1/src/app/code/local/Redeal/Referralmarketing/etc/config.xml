@@ -1,5 +1,19 @@
 <?xml version="1.0"?>
 <config>
+     <redeal>
+        <redeal_group>
+            <redeal_select>
+                <enabled>1</enabled>
+            </redeal_select>
+        </redeal_group>
+    </redeal>
+    <default>
+        <redeal>
+            <redeal_group>
+             <section_two>1</section_two>
+            </redeal_group>
+        </redeal>
+    </default>
     <modules>
         <Redeal_Referralmarketing>
             <version>1.0.1</version>
@@ -39,11 +53,11 @@
                 <class>Redeal_Referralmarketing_Helper</class>
             </referralmarketing>
         </helpers>
-        <models>
+        <!-- <models>
              <referralmarketing>
                 <class>Redeal_Referralmarketing_Model</class>
              </referralmarketing>
-        </models>
+        </models> -->
     </global>
     <adminhtml>
         <acl>
