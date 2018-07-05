@@ -46,7 +46,7 @@
                         </containerid>
 						<section_one translate="label">
 							<label>Redeal Plugin Version</label>
-							<comment>1.0.3</comment>	
+							<comment>1.0.4</comment>	
 							<frontend_type>Label</frontend_type>							
                             <sort_order>101</sort_order>
                             <show_in_default>1</show_in_default>
