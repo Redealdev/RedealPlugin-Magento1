@@ -83,6 +83,9 @@
            
         }
     }
+	$total = number_format($orderdetail->getGrandTotal(), 2, '.', '');
+	$tax = number_format($orderdetail->getTaxAmount(), 2, '.', '');
+	$revenue = $total - $tax;
 	
 ?>
 
@@ -97,6 +100,7 @@
         name: "<?php echo $orderdetail->getCustomerFirstname(); ?>",
         total: "<?php echo number_format($orderdetail->getGrandTotal(), 2, '.', ''); ?>",
         price: "<?php echo number_format($orderdetail->getSubtotal(), 2, '.', ''); ?>",
+		revenue: "<?php echo $revenue; ?>",
         tax: "<?php echo number_format($orderdetail->getTaxAmount(), 2, '.', ''); ?>",
         shipping: "<?php echo number_format($orderdetail->getShippingAmount(), 2, '.', ''); ?>",
         currency: "<?php echo $orderdetail->getOrderCurrencyCode(); ?>",
@@ -115,7 +119,7 @@
         'purchase': {
           'actionField': {
             'id': '<?php echo $orderdetail->getIncrementId()?>', 
-            'revenue': '<?php echo number_format($orderdetail->getGrandTotal(), 2, '.', ''); ?>',
+            'revenue': "<?php echo $revenue; ?>",
             'tax': '<?php echo number_format($orderdetail->getTaxAmount(), 2, '.', ''); ?>',
             'shipping': '<?php echo number_format($orderdetail->getShippingAmount(), 2, '.', ''); ?>',
             'currency': '<?php echo $orderdetail->getOrderCurrencyCode(); ?>',
@@ -132,6 +136,7 @@
         console.log("id: <?php echo $orderdetail->getIncrementId(); ?>,");
         console.log("name: <?php echo $orderdetail->getCustomerFirstname(); ?>,");
         console.log("total: <?php echo number_format($orderdetail->getGrandTotal(), 2, '.', ''); ?>,");
+		console.log("revenue: <?php echo $revenue; ?>,");
         console.log("price: <?php echo number_format($orderdetail->getSubtotal(), 2, '.', ''); ?>,");
         console.log("tax: <?php echo number_format($orderdetail->getTaxAmount(), 2, '.', ''); ?>,");
         console.log("shipping: <?php echo number_format($orderdetail->getShippingAmount(), 2, '.', ''); ?>,");
@@ -147,7 +152,7 @@
         
         console.log("Google Tag Manager");
         console.log("id: <?php echo $orderdetail->getIncrementId(); ?>,");
-        console.log("revenue: <?php echo number_format($orderdetail->getGrandTotal(), 2, '.', ''); ?>,");
+        console.log("revenue: <?php echo $revenue; ?>,");
         console.log("tax: <?php echo number_format($orderdetail->getTaxAmount(), 2, '.', ''); ?>,");
         console.log("shipping: <?php echo number_format($orderdetail->getShippingAmount(), 2, '.', ''); ?>,");
         console.log("currency: <?php echo $orderdetail->getOrderCurrencyCode(); ?>,");

@@ -2,7 +2,7 @@
     <modules>
         <Redeal_Referralmarketing>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </Redeal_Referralmarketing>
     </modules>
 </config>

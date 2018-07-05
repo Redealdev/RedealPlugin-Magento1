@@ -14,9 +14,16 @@
             </redeal_group>
         </redeal>
     </default>
+	    <default>
+        <redeal>
+            <redeal_group>
+             <section_one>1</section_one>
+            </redeal_group>
+        </redeal>
+    </default>
     <modules>
         <Redeal_Referralmarketing>
-            <version>1.0.1</version>
+            <version>1.0.2</version>
         </Redeal_Referralmarketing>
     </modules>
     <frontend>

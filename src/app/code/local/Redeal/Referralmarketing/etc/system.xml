@@ -27,7 +27,7 @@
                     <fields>
                         <redeal_select translate="label">
                             <label>Enable: </label>
-                        <comment>Enable or disable Redeal extension </comment>
+                        <comment>Enable or disable Redeal extension</comment>
                             <frontend_type>select</frontend_type>
                             <sort_order>90</sort_order>
                             <show_in_default>1</show_in_default>
@@ -44,6 +44,14 @@
                             <show_in_store>1</show_in_store>
                             <depends><redeal_select>1</redeal_select></depends>
                         </containerid>
+						<section_one translate="label">
+							<label>Redeal Plugin Version</label>
+							<comment>1.0.2</comment>	
+							<frontend_type>Label</frontend_type>							
+                            <sort_order>101</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>                                                     
+						</section_one>
                         <!-- <section_two translate="label">
                             <label>Select Mode</label>
                             <frontend_type>select</frontend_type>
